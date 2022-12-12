@@ -1,0 +1,58 @@
+{% extends "MainApp/base.html" %}
+
+{% block content %}
+<style>
+    .center {
+        margin: auto;
+        width: 50%;
+        border: 10px solid black;
+        padding: 10px;
+        background-color:lightcoral;      
+    }
+    .body{
+        margin: auto;
+        width: 50%;
+        border: 5px solid black;
+        padding: 10px;
+        background-color: lightcoral;
+    }
+    body{
+        background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .textarea{
+        display: flex;
+        justify-content: space-between;
+    }
+    #para{
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    #para1{
+        text-align:center;
+    }
+</style>
+
+<div class = 'center'>
+    <form action="." method = "POST">
+    <div class = 'title'>
+        <div>
+            <p id ="para">Johnny B's Pizzeria</p>
+        </div>
+    </div>
+    </form>
+</div>
+<p></p>
+<p></p>
+<p></p>
+<div class = 'body'>
+    <form action = '.' method = "POST">
+        <div>
+            <p id ='para1'>Our website holds all the information that you would ever need to know! Enjoy your search!</p>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}
